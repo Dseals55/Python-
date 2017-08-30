@@ -1,0 +1,6 @@
+# For While loop 2
+countdown = 10
+while countdown > 0:
+        print countdown
+        countdown -= 1
+print "BLAST OFF!"

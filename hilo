@@ -1,0 +1,25 @@
+import random 
+dnumb = random.randrange(1, 101)
+# print("dnumb: ", dnumb)
+
+guess      = 0
+numGuesses = 0
+
+while guess != dnumb:
+	guess = int(input("Guess a number between 1 and 100: "))
+	# print("Guess = ", guess)
+
+	numGuesses = numGuesses + 1
+	
+	if guess > dnumb:
+		print("Too high")
+	if guess < dnumb:
+		print("Too low")
+	if guess == dnumb:
+		print("Just right")
+		
+print("You took ", numGuesses, "guesses")
+if numGuesses < 4:
+	print("You're amazing!")
+elif numGuesses > 7:
+	print("Keep your day job")
